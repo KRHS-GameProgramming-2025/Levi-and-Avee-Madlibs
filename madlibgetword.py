@@ -144,6 +144,41 @@ def getWord(prompt, debug = False):
 
     return word 
     
+def getfood(prompt, debug=False):
+    if debug: print("get foodFunction")
+    goodinput = False
+    
+    foods=["pizza",
+            "icecream",
+            "watermelon",
+            "cookies",
+            "hotdogs",
+            "cake",
+            "french fries",
+            "jello",
+            "chips",
+            "eggs",
+            "pie",
+            "donuts",
+            "steak",
+            "mac n cheese",
+            "pasta",
+            "tacos",
+            
+            ]
+    
+    while not goodinput:
+        word = input(prompt)
+        if isswear (word, debug):
+            goodinput = False
+            print("don't use language like that")
+        elif word.lower() in foods:
+            goodinput = True
+        else:
+            print ("ive never heard of that")
+    return word
+    
+    
 def isSwear(word, debug = False):
         if debug: print("isSwear function")
         if word.lower() in swearlist:
