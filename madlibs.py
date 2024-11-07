@@ -23,6 +23,7 @@ def madlibs(debug = False):
         if choice == "1":
             print("story fouar selected!1!")
             print(story1(debug))
+            print("\n")
             input("press enter to continue")
         if choice == "2":
             print("story three selected!1!")
