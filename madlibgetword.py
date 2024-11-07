@@ -77,7 +77,25 @@ def getfood(prompt, debug=False):
             "tacos",
             
             ]
+    def getrestaurant(prompt, debug=False):
+    if debug: print("get restaurantFunction")
+    goodinput = False
     
+    restaurant=["pizza hut",
+                "burger king",
+                "wendys",
+                "kfc",
+                "chickfla",
+                "sonic",
+                "in and out",
+                "subway",
+                "five guys",
+                "taco bell",
+                "dairy queen",
+                "dunkin",
+                "papa johns",
+                "applebees",
+                ]
     while not goodinput:
         word = input(prompt)
         if isswear (word, debug):

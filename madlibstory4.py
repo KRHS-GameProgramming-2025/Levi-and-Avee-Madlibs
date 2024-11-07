@@ -1,7 +1,7 @@
 from Getters import *
 
 def story4(debug=False):
-    if debug: print("welcome to story 1")
+    if debug: print("welcome to story 4")
     
     
     
@@ -12,6 +12,7 @@ def story4(debug=False):
     out=""
     out+="one day me and my friend " +friendname1
     out+=" were eatting " +food1
-    
+    out+=" at the new " +restaurant1
+    out+=" in town " 
     return out
 
