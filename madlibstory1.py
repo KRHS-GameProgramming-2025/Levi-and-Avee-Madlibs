@@ -3,12 +3,13 @@ from madlibgetword import *
 def story1(debug = False):
     if debug: print("ヾ(0w0`)o welcome!! :3 Story 1")
     
+    print("\n")
     animalname1 = getWord("choose the name ;3", debug)
     placename1 = getWord("choose the name ;3", debug)
     placename2 = getWord("choose the name ;3", debug)
     
     
-    out = ""
+    out = "\n"
     out +=  "In the great planes we can see one of the great buffalo oh and! " + animalname1 
     out += " one of the many rare and beautiful species within" + placename1 
     out += "located uhh.. in the beautiful park of.."+ placename2 

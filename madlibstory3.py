@@ -3,9 +3,9 @@ from madlibgetword import *
 def story3(debug = False):
     if debug: print("ヾ(0w0`)o welcome!! :3 Story 3")
     
-    word1 = getWord("choose the name ;3", debug)
-    word2 = getWord("choose the name ;3", debug)
-    word3 = getWord("choose the name ;3", debug)
+    word1 = getWordWithscience("choose the name ;3", debug)
+    word2 = getWordWithscience("choose the name ;3", debug)
+    word3 = getWordWithscience("choose the name ;3", debug)
     
         
     

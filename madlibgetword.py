@@ -41,11 +41,100 @@ def getMenuOption(debug = False):
             
     return option 
 
-def getWord(prompt, debug = False):
+
+
+
+def getWordWithscience(prompt, debug = False):
     if debug: print("getMenuOption function")
     
     goodinput = False 
     
+    science = ["earth science",
+        "medical",
+        "physics", 
+        "nuclear",
+        "astronomy",
+        "astrophysics", 
+        "geology",
+        "meteorlogy",
+        "aagriculture",]
+        
+    while not goodinput:
+        word = input(prompt)
+        goodinput = True
+        if isSwear(word, debug):
+           goodinput = False
+           print("gwet owrginal dangit!!")
+        
+    return word 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def getWordWithElement(prompt, debug = False):
+    if debug: print("getMenuOption function")
+    
+    goodinput = False 
+    
+    elements = ["uranium",
+        "cobalt-60",
+        "antimatter", 
+        "el nasir",
+        "tesla cybertruck",
+        "plutonium", 
+        "cadnium",
+        "mercury",
+        "arsenic",]
+        
+    while not goodinput:
+        word = input(prompt)
+        goodinput = True
+        if isSwear(word, debug):
+           goodinput = False
+           print("gwet outta my gwame or lword help me i will find you-")
+        elif word.lower() in elements: 
+            goodinput = False
+            print("whyYY???? WUoULD YWOU CHOOSE THAT??")
+
+    return word 
+
+def getWord(prompt, debug = False):
+    if debug: print("getMenuOption function")
+    
+    goodinput = False 
+        
     while not goodinput:
         word = input(prompt)
         goodinput = True
@@ -115,6 +204,24 @@ def isSwear(word, debug = False):
         else:
             return False 
 
-swearlist = ["shit", "fuck", "bitch", "son of a bitch", "sonofvabitch", "cunt" "vile imbicile", "nazi", "fucker", "fuckinghell", "midget", "Machine, i will cut you down, break you apart, splay the gore of your profane form across the STARS! I will grind you down until the very SPARKS CRY FOR MERCY! My hands shall RELISH ENDING YOU… HERE AND NOW!", "INSIGNIFICANT FUCK!", "me omw to beat your ass to death", "500 cigarretes", "Britan" "long live the queen" "long live the old gods", 
-]
+swearlist = ["shit", 
+             "fuck", 
+             "bitch", 
+             "son of a bitch", 
+             "sonofvabitch", 
+             "cunt",
+             "vile imbicile", 
+             "nazi", 
+             "fucker", 
+             "fuckinghell", 
+             "midget", 
+             "Machine, i will cut you down, break you apart, splay the gore of your profane form across the STARS! I will grind you down until the very SPARKS CRY FOR MERCY! My hands shall RELISH ENDING YOU… HERE AND NOW!", 
+             "INSIGNIFICANT FUCK!", 
+             "me omw to beat your ass to death", 
+             "500 cigarretes", 
+             "Britan", 
+             "long live the queen", 
+             "long live the old gods",
+             ] 
+
 #note these do not represent anything i would say alright? this is for the task at hand only 
