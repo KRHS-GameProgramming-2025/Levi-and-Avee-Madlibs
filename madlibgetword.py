@@ -70,7 +70,9 @@ def getWordWithscience(prompt, debug = False):
         if isSwear(word, debug):
            goodinput = False
            print("gwet owrginal dangit!!")
-        
+        elif word.lower() in science: 
+            goodinput = False
+            print("gwet owrginal dangit!!")
     return word 
 
 
@@ -172,11 +174,11 @@ def getrestaurant(prompt, debug=False):
         word = input(prompt)
         if isSwear (word, debug):
             goodinput = False
-            print("don't use language like that")
+            print("lword hwelp me i will find you")
         elif word.lower() in restaurant:
             goodinput = True
         else:
-            print ("ive never heard of that")
+            print ("ive nevah hweard of thwat before!")
     return word
     
     
@@ -208,3 +210,5 @@ swearlist = ["shit",
              ] 
 
 #note these do not represent anything i would say alright? this is for the task at hand only 
+
+#dev2. STOP REMOVING THE CHARACTER!!!
