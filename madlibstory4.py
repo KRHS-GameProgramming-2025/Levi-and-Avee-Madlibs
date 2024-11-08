@@ -1,4 +1,4 @@
-from Getters import *
+from madlibgetword import *
 
 def story4(debug=False):
     if debug: print("welcome to story 4")
@@ -6,8 +6,9 @@ def story4(debug=False):
     
     
     
-    friendname1 = getword("enter a name :", debug)
+    friendname1 = getWord("enter a name :", debug)
     food1 = getfood("enter a food :", debug)
+    restaurant1 = getrestaurant("enter a reataurant :", debug)
     
     out=""
     out+="one day me and my friend " +friendname1

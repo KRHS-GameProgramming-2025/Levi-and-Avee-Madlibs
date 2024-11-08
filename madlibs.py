@@ -2,7 +2,8 @@ from madlibscreen import *
 from madlibgetword import *
 from madlibstory1 import *
 from madlibstory2 import *
-from madlibstory3 import * 
+from madlibstory3 import *
+from madlibstory4 import * 
 #dont forget to put in the new stories here okay?
 def madlibs(debug = False):
     if debug: print ("DEBUG ACTIVE, WELCOME AUTHORIZED USER")
@@ -32,6 +33,12 @@ def madlibs(debug = False):
         if choice == "3":
             print("story two selected!1!")
             print(story3(debug))
+            input("press enter to continue")
+            
+            
+        if choice == "4":
+            print("story four selected!1!")
+            print(story4(debug))
             input("press enter to continue")
     
     

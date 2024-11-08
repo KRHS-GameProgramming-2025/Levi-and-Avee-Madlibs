@@ -36,12 +36,17 @@ def getMenuOption(debug = False):
         option == "3"):
             goodinput = True
             
+        if (option == "4" or
+        option == "four" or
+        option == "story4" or
+        option == "loadS4" or
+        option == "4"):
+            goodinput = True
+            
         else:
             print("Pwease make a valid chowice! or get out!")
             
     return option 
-
-
 
 
 def getWordWithscience(prompt, debug = False):
@@ -67,40 +72,6 @@ def getWordWithscience(prompt, debug = False):
            print("gwet owrginal dangit!!")
         
     return word 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 def getWordWithElement(prompt, debug = False):
@@ -166,7 +137,19 @@ def getfood(prompt, debug=False):
             "tacos",
             
             ]
-    def getrestaurant(prompt, debug=False):
+            
+    while not goodinput:
+        word = input(prompt)
+        if isSwear (word, debug):
+            goodinput = False
+            print("don't use language like that")
+        elif word.lower() in foods:
+            goodinput = True
+        else:
+            print ("ive never heard of that")
+    return word
+    
+def getrestaurant(prompt, debug=False):
     if debug: print("get restaurantFunction")
     goodinput = False
     
@@ -187,10 +170,10 @@ def getfood(prompt, debug=False):
                 ]
     while not goodinput:
         word = input(prompt)
-        if isswear (word, debug):
+        if isSwear (word, debug):
             goodinput = False
             print("don't use language like that")
-        elif word.lower() in foods:
+        elif word.lower() in restaurant:
             goodinput = True
         else:
             print ("ive never heard of that")
