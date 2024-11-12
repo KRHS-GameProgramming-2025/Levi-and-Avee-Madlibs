@@ -48,6 +48,32 @@ def getMenuOption(debug = False):
             
     return option 
 
+def getWordWithAnimal(prompt, debug = False):
+    if debug: print("getMenuOption function")
+    
+    goodinput = False 
+    
+    animals = ["dog",
+        "cat",
+        "monkey", 
+        "human",
+        "panda",
+        "gorillia", 
+        "hyena",
+        "bird",
+        "",]
+        
+    while not goodinput:
+        word = input(prompt)
+        goodinput = True
+        if isSwear(word, debug):
+           goodinput = False
+           print("gwet outta my gwame or lword help me i will find you-")
+        elif word.lower() in animals: 
+            goodinput = False
+            print("Sweriously?? ya boring! its a madlibs!!")
+
+    return word 
 
 def getWordWithscience(prompt, debug = False):
     if debug: print("getMenuOption function")

@@ -12,10 +12,10 @@ def story3(debug = False):
     
     out = ""
     out +=  "welcome all to the new revolutionary " + word1
-    out += " this new item will help advance the science of" + word2
+    out += " this new item will help advance the science of " + word2
     out += " along with the great scientists at base "+ word3
-    out += " the science around "+ word2 +" will be changed forever!"
-    out += " advancements beyond compare?"
+    out += " the science around "+ word2 +" will be changed forever! "
+    out += " advancements beyond compare? "
     
     
     return out

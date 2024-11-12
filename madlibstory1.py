@@ -4,7 +4,7 @@ def story1(debug = False):
     if debug: print("ヾ(0w0`)o welcome!! :3 Story 1")
     
     print("\n")
-    animalname1 = getWord("choose the name ;3", debug)
+    animalname1 = getWordWithAnimal("choose the name ;3", debug)
     placename1 = getWord("choose the name ;3", debug)
     placename2 = getWord("choose the name ;3", debug)
     
