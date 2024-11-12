@@ -207,6 +207,115 @@ def getrestaurant(prompt, debug=False):
             print ("ive nevah hweard of thwat before!")
     return word
     
+def getcar(prompt, debug=False):
+    if debug: print("get carFunction")
+    goodinput = False
+    
+    cars=["tesla cyber truck",
+            "2006 toyoda",
+            "2015 ford",
+            "golf kart",
+            "go kart",
+            "shopping kart",
+            
+            ]
+            
+    while not goodinput:
+        word = input(prompt)
+        if isSwear (word, debug):
+            goodinput = False
+            print("don't use language like that")
+        elif word.lower() in cars:
+            goodinput = True
+        else:
+            print ("ive never heard of that")
+    return word
+
+def gettvshow(prompt, debug=False):
+    if debug: print("get tvshowFunction")
+    goodinput = False
+    
+    tvshows=["adventure time",
+            "regular show",
+            "sponge bob",
+            "gumball",
+            "we bear bears",
+            
+            ]
+            
+            
+            
+            
+            
+    while not goodinput:
+        word = input(prompt)
+        if isSwear (word, debug):
+            goodinput = False
+            print("don't use language like that")
+        elif word.lower() in tvshows:
+            goodinput = True
+        else:
+            print ("ive never heard of that")
+    return word
+
+def getvideogame(prompt, debug=False):
+    if debug: print("get videogameFunction")
+    goodinput = False
+    
+    videogames=["team fortress 2",
+            "earthbound",
+            "super mario",
+            "fortnite",
+            "wii sports",
+            "among us",
+            "fall guys",
+            "super smash bros",
+            "pokemon",
+            
+            ]
+            
+            
+            
+            
+            
+            
+    while not goodinput:
+        word = input(prompt)
+        if isSwear (word, debug):
+            goodinput = False
+            print("don't use language like that")
+        elif word.lower() in videogames:
+            goodinput = True
+        else:
+            print ("ive never heard of that")
+    return word
+
+def gettime(prompt, debug=False):
+    if debug: print("get timeFunction")
+    goodinput = False
+    
+    times=["9:00pm",
+            "8:00pm",
+            "4:00am",
+            "3:35pm",
+            "2:56am",
+            "1:23am",
+            "5:00pm",
+            "6:30am",
+            "7:00pm",
+            
+            ]
+    while not goodinput:
+        word = input(prompt)
+        if isSwear (word, debug):
+            goodinput = False
+            print("don't use language like that")
+        elif word.lower() in times:
+            goodinput = True
+        else:
+            print ("ive never heard of that")
+    return word
+    
     
 def isSwear(word, debug = False):
         if debug: print("isSwear function")
