@@ -321,3 +321,5 @@ swearlist = ["shit",
 #note these do not represent anything i would say alright? this is for the task at hand only 
 
 #dev2. STOP REMOVING THE CHARACTER!!!
+
+# i did not remove the character
