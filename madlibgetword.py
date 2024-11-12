@@ -48,6 +48,32 @@ def getMenuOption(debug = False):
             
     return option 
 
+def getWordWithAnimal(prompt, debug = False):
+    if debug: print("getMenuOption function")
+    
+    goodinput = False 
+    
+    animals = ["dog",
+        "cat",
+        "monkey", 
+        "human",
+        "panda",
+        "gorillia", 
+        "hyena",
+        "bird",
+        "",]
+        
+    while not goodinput:
+        word = input(prompt)
+        goodinput = True
+        if isSwear(word, debug):
+           goodinput = False
+           print("gwet outta my gwame or lword help me i will find you-")
+        elif word.lower() in animals: 
+            goodinput = False
+            print("Sweriously?? ya boring! its a madlibs!!")
+
+    return word 
 
 def getWordWithscience(prompt, debug = False):
     if debug: print("getMenuOption function")
@@ -202,7 +228,7 @@ def getcar(prompt, debug=False):
         elif word.lower() in cars:
             goodinput = True
         else:
-            print ("ive never heard of that")
+            print ("Your jwoking! hahaaha!")
     return word
 
 def gettvshow(prompt, debug=False):
@@ -218,9 +244,6 @@ def gettvshow(prompt, debug=False):
             ]
             
             
-            
-            
-            
     while not goodinput:
         word = input(prompt)
         if isSwear (word, debug):
@@ -229,7 +252,7 @@ def gettvshow(prompt, debug=False):
         elif word.lower() in tvshows:
             goodinput = True
         else:
-            print ("ive never heard of that")
+            print ("swounds cool!")
     return word
 
 def getvideogame(prompt, debug=False):
@@ -248,10 +271,7 @@ def getvideogame(prompt, debug=False):
             
             ]
             
-            
-            
-            
-            
+    
             
     while not goodinput:
         word = input(prompt)
@@ -261,7 +281,7 @@ def getvideogame(prompt, debug=False):
         elif word.lower() in videogames:
             goodinput = True
         else:
-            print ("ive never heard of that")
+            print ("whats that now?")
     return word
 
 def gettime(prompt, debug=False):
@@ -287,7 +307,7 @@ def gettime(prompt, debug=False):
         elif word.lower() in times:
             goodinput = True
         else:
-            print ("ive never heard of that")
+            print ("a okay time to arrive")
     return word
     
     
