@@ -40,6 +40,12 @@ def madlibs(debug = False):
             print("story four selected!1!")
             print(story4(debug))
             input("press enter to continue")
+            
+            
+        if choice == "?":
+            print("help selected")
+            print(helpscreen(debug))
+            input("press enter to continue")
     
     
     

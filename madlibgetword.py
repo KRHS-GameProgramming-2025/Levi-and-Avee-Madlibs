@@ -42,6 +42,12 @@ def getMenuOption(debug = False):
         option == "loadS4" or
         option == "4"):
             goodinput = True
+        if (option == "?" or
+        option == "help" or
+        option == "help?" or
+        option == "helpmenu" or
+        option == "helpmenu?"):
+            goodinput = True
             
         else:
             print("Pwease make a valid chowice! or get out!")
@@ -147,7 +153,7 @@ def getfood(prompt, debug=False):
     if debug: print("get foodFunction")
     goodinput = False
     
-    foods=["pizza",ヾ(
+    foods=["pizza",
             "icecream",
             "watermelon",
             "cookies",
@@ -175,7 +181,7 @@ def getfood(prompt, debug=False):
             goodinput = True
         else:
             print ("ive never heard of that")
-    return wordヾ(
+    return word
     
 def getrestaurant(prompt, debug=False):
     if debug: print("get restaurantFunction")

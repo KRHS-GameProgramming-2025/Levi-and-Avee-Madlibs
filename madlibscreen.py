@@ -34,7 +34,7 @@ def menuscreen (debug = False):
 
 def helpscreen (debug = False):
     if debug: print("ヾ(0w0`)o welcome!! :3")
-    out+= "+---------------------------------------+\n"
+    out = "+---------------------------------------+\n"
     out+= "|   *HELP*                              |\n"
     out+= "|   write Q to quit! exit also works    |\n"
     out+= "|   story one is best loaded with 1!    |\n"
@@ -46,3 +46,5 @@ def helpscreen (debug = False):
     out+= "|   bopyright 2024 avee and levi        |\n"
     out+= "|                                       |\n"
     out+= "+---------------------------------------+\n"
+    
+    return out
