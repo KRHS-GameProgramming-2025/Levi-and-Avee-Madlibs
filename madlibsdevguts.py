@@ -20,7 +20,7 @@
 #
 #Dev1 note, need to work on easter eggs, again. but 1 is running 2 is.. almost there, need work done on S1 and S4. albeit S4 is presumably W.I.P
 #
-#
+#update, all things should have easter eggs? 
 #
 #
 #
@@ -30,6 +30,7 @@
 #
 #
 # what will i do for the graphics???
+#note to self how to return the font to normal
 
 
 
@@ -400,8 +401,7 @@
 
 
 
-
-
+DATA NOT FOUND
 
 
 
