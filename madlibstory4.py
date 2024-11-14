@@ -20,10 +20,10 @@ def story4(debug=False):
     out+=" at the new " +restaurant1
     out+=" in town " 
     out+=" after that we got into a " +car1
-    out+=" and drove home and watched the new episode of " +tvshow1
+    out+=" we then drove home and watched the new episode of " +tvshow1
     out+=" he went home and i played " +videogame1
     out+=" then i had " +food2+" for dinner "
-    out+=" then i went to bed at " +time1
+    out+=" after that i went to bed at " +time1
     return out
 
 #wip  Me and my friend = name FN1 and my other friend FN2, went to the ballpark and got some hotdogs and FD1 along with SE1 to season it!
