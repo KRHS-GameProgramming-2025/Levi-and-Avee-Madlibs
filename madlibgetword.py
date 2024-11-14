@@ -147,7 +147,7 @@ def getfood(prompt, debug=False):
     if debug: print("get foodFunction")
     goodinput = False
     
-    foods=["pizza",
+    foods=["pizza",ヾ(
             "icecream",
             "watermelon",
             "cookies",
@@ -175,7 +175,7 @@ def getfood(prompt, debug=False):
             goodinput = True
         else:
             print ("ive never heard of that")
-    return word
+    return wordヾ(
     
 def getrestaurant(prompt, debug=False):
     if debug: print("get restaurantFunction")
